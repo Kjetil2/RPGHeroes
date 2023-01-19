@@ -16,7 +16,7 @@ namespace RPGHeroesTest
             
             HeroAttribute expected = new HeroAttribute(1, 1, 8);
 
-            HeroAttribute actual = new HeroAttribute(3,1,8);
+            HeroAttribute actual = new HeroAttribute(1,1,8);
 
             Assert.Equal(expected, actual);
             
