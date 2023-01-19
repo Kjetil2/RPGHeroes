@@ -64,6 +64,7 @@ namespace RPGHeroes
             sb.AppendLine($"Heroes total dexterity are ");
             sb.AppendLine($"Heroes total intelligence are ");
             sb.AppendLine($"Heroes total Damage are ");
+            Console.WriteLine(sb);
         }
 
         
