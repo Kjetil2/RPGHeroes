@@ -18,7 +18,7 @@ namespace RPGHeroes
         public Mage(string name) : base(name)
         {
             LevelAttributes = new HeroAttribute(1, 1, 8);
-             ValidWeapontypes = new validWeaponTypes<WeaponType>(){ }
+            ValidWeapontypes = new validWeaponTypes<WeaponType>() { };
             
         }
 
