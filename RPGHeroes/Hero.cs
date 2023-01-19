@@ -34,7 +34,7 @@ namespace RPGHeroes
         }
 
         // Creating an Abstract Methode for level up
-        public abstract void LevelUp(int level);
+        public abstract void LevelUp();
 
         // Creating a Methode to set all the Equipment to a deafult Value null
         public void slotEquipment()
@@ -52,13 +52,22 @@ namespace RPGHeroes
         //Creating an Abstract Methode for Equip Armor with one Parameter
         public abstract void Equip(Armor armor);
 
+        // Creating Property to Enumerator for HeroType
+        public HeroType Ht { get; set; }
+
+        // Creating constructor for HeroType
+        public Hero(HeroType ht)
+        {
+            Ht = ht;
+        }
+
 
         // Creating a StringBuilder in a public Methode to return Hero state
         public void HeroDisplay()
         {
             StringBuilder sb = new StringBuilder();
             sb.AppendLine($"Heroname are {Name}");
-            sb.AppendLine($"Heroclass are ");
+            sb.AppendLine($"Heroclass are {Ht}");
             sb.AppendLine($"Herolevel are {Level}");
             sb.AppendLine($"Heroes total strength are ");
             sb.AppendLine($"Heroes total dexterity are ");
@@ -67,16 +76,18 @@ namespace RPGHeroes
             Console.WriteLine(sb);
         }
 
-        
-
-
-
+ 
 
 
 
     }
 
-
+    //Creating Enummertator for the four diffrent Heroes
+ public enum HeroType
+    { Mage,
+    Ranger,
+    Rogue,
+    Warrior}
 
 
             

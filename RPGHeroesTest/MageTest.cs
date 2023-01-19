@@ -3,9 +3,9 @@ namespace RPGHeroesTest
     public class MageTest
     {
         [Fact]
-        public void Test1()
+        public void MageLevelUp_AddoneLevel_ShouldReturnLevelPlussOne()
         {
-
+            
         }
     }
 }

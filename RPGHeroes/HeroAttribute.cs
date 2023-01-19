@@ -34,6 +34,7 @@ namespace RPGHeroes
             Intelligence+= heroAttribute.Intelligence;
         }
 
+        
                 
 
     }

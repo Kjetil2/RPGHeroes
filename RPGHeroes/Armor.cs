@@ -20,8 +20,8 @@ namespace RPGHeroes
 
         // Creating Property to Enumerator for ArmorType
         public ArmorType At { get; set; }
-
         
+
     }
 
     // Creating an Enumerator for ArmorType

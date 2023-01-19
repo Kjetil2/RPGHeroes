@@ -18,12 +18,12 @@ namespace RPGHeroes
         public Mage(string name) : base(name)
         {
             LevelAttributes = new HeroAttribute(1, 1, 8);
-
-            HeroAttribute LevelUpAttributes = new HeroAttribute(1, 1, 8);
+             ValidWeapontypes = new validWeaponTypes<WeaponType>(){ }
+            
         }
 
         //Creating Override Methode for Level up with one Parameter
-        public override void LevelUp(int Level)
+        public override void LevelUp()
         {
             Level += 1;
             LevelAttributes.IncreaseAttribute(new HeroAttribute(1, 1, 5));
@@ -49,11 +49,11 @@ namespace RPGHeroes
             // Creating Exception to see if WeaponType is Staffs or Wands
             try
             {
-                if (weapon.wt == WeaponType.Staffs)
+                if (weapon.Wt == WeaponType.Staffs)
                 {
                     Equipment[weapon.equipment] = weapon;
                 }
-                else if (weapon.wt == WeaponType.Wands)
+                else if (weapon.Wt == WeaponType.Wands)
                 {
                     Equipment[weapon.equipment] = weapon;
                 }

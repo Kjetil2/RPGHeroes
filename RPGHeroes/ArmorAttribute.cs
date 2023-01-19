@@ -8,21 +8,24 @@ namespace RPGHeroes
 {
     public class ArmorAttribute
     {
+        private readonly int armor;
+
         //Declearing the variables for the Class ArmorAttribute
-        public int Health { get; set; }
+        public int Armor { get; set; }
 
         // Creating a Constructor with one Parameter
-        public ArmorAttribute(int health)
+        public ArmorAttribute(int Armor)
         {
-            Health = health;
+            Armor = armor;
         }
 
         // Creating a methode to Increase ArmorAttribute
         public void IncreaseAttribute(ArmorAttribute armorattribute)
         {
-            Health += armorattribute.Health;
+            Armor += armorattribute.Armor;
         }
     }
 
-    
+
 }
+

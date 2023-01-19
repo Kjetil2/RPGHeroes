@@ -17,10 +17,10 @@ namespace RPGHeroes
         public Rogue(string name) : base(name)
         {
             LevelAttributes = new HeroAttribute(2, 6, 1);
-            HeroAttribute LevelUpAttributes = new HeroAttribute(1, 4, 1);
+           
         }
         //Creating Override Methode for Level up with one Parameter
-        public override void LevelUp(int Level)
+        public override void LevelUp()
         {
             Level += 1;
             LevelAttributes.IncreaseAttribute(new HeroAttribute(1, 4, 1));
@@ -47,11 +47,11 @@ namespace RPGHeroes
             // Creating Exception to see if WeaponType is Daggers or Swords
             try
             {
-                if (weapon.wt == WeaponType.Daggers)
+                if (weapon.Wt == WeaponType.Daggers)
                 {
                     Equipment[weapon.equipment] = weapon;
                 }
-                else if (weapon.wt == WeaponType.Swords)
+                else if (weapon.Wt == WeaponType.Swords)
                 {
                     Equipment[weapon.equipment] = weapon;
                 }

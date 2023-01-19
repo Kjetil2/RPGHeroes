@@ -23,7 +23,7 @@ namespace RPGHeroes
 
         }
         // Creating Property to Enumerator for WeaponType
-        public WeaponType wt { get; set; }
+        public WeaponType Wt { get; set; }
 
 
 

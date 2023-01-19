@@ -17,11 +17,11 @@ namespace RPGHeroes
         public Warrior(string name) : base(name)
         {
             LevelAttributes = new HeroAttribute(5, 2, 1);
-            HeroAttribute LevelUpAttributes = new HeroAttribute(3, 2, 1);
+            
         }
 
         //Creating Override Methode for Level up with one Parameter
-        public override void LevelUp(int Level)
+        public override void LevelUp()
         {
             Level += 1;
             LevelAttributes.IncreaseAttribute(new HeroAttribute(3, 2, 1));
@@ -43,15 +43,15 @@ namespace RPGHeroes
             // Creating Exception to see if WeaponType is Axes or Hammers or Swords
             try
             {
-                if (weapon.wt == WeaponType.Axes)
+                if (weapon.Wt == WeaponType.Axes)
                 {
                     Equipment[weapon.equipment] = weapon;
                 }
-                else if (weapon.wt == WeaponType.Hammers)
+                else if (weapon.Wt == WeaponType.Hammers)
                 {
                     Equipment[weapon.equipment] = weapon;
                 }
-                else if (weapon.wt == WeaponType.Swords)
+                else if (weapon.Wt == WeaponType.Swords)
                 {
                     Equipment[weapon.equipment] = weapon;
                 }

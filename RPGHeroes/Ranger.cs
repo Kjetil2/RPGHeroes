@@ -18,12 +18,10 @@ namespace RPGHeroes
         public Ranger(string name) : base(name)
         {
             LevelAttributes = new HeroAttribute(1, 7, 1);
-
-            HeroAttribute LevelUpAttributes = new HeroAttribute(1, 5, 1);
         }
 
         //Creating Override Methode for Level up with one Parameter
-        public override void LevelUp(int Level)
+        public override void LevelUp()
         {
             Level += 1;
             LevelAttributes.IncreaseAttribute(new HeroAttribute(1, 5, 1));
@@ -48,7 +46,7 @@ namespace RPGHeroes
             // Creating Exception to see if WeaponType is Bows 
             try
             {
-                if (weapon.wt == WeaponType.Bows)
+                if (weapon.Wt == WeaponType.Bows)
                 {
                     Equipment[weapon.equipment] = weapon;
                 }
