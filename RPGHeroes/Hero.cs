@@ -87,11 +87,7 @@ namespace RPGHeroes
     { Mage,
     Ranger,
     Rogue,
-    Warrior}
-
-
-            
-
+    Warrior}     
 
     }
 

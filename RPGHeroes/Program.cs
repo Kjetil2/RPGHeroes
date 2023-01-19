@@ -5,14 +5,19 @@ namespace RPGHeroes
 {
     class Program
     {
-        public static void Main(string[] args);
-       
 
 
 
 
-/*Hero warrior = new Hero();
-    warrior.Name = "kjetil";
-Console.WriteLine(warrior);*/
-        }
+
+
+
+
+
+
+        /*Hero warrior = new Hero();
+            warrior.Name = "kjetil";
+        Console.WriteLine(warrior);*/
+    }
+
 }
