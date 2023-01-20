@@ -20,7 +20,8 @@ namespace RPGHeroesTest
             HeroAttribute expected = new HeroAttribute(1, 1, 8);
 
             //Act
-            HeroAttribute actual = new HeroAttribute(1,1,8);
+            HeroAttribute actual = new HeroAttribute(1,1,5);
+            
 
 
             //Assert
