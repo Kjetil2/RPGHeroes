@@ -14,6 +14,7 @@ namespace RPGHeroesTest
         public void MageLevelUp_AddoneLevel_ShouldReturnLevelPlussOne()
         
         {
+
             Mage mage = new Mage("Kjetil");
             
             // Arrange 
