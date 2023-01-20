@@ -6,28 +6,28 @@ using Xunit;
 namespace RPGHeroesTest
 {
     // Creating a test class
-    public class MageTest
+    public class RogueTest
     {
         [Fact]
-        
+
         //Creating a new test Methode
-        public void MageLevelUp_AddoneLevel_ShouldReturnLevelPlussOne()
-        
+        public void RogueLevelUp_AddoneLevel_ShouldReturnLevelPlussOne()
+
         {
 
-            Mage mage = new Mage("Kjetil");
-            
+            Rogue Rogue = new rogue("Kjetil");
+
             // Arrange 
             HeroAttribute expected = new HeroAttribute(1, 1, 8);
 
             //Act
-            HeroAttribute actual = new HeroAttribute(1,1,5);
-            
+            HeroAttribute actual = new HeroAttribute(1, 1, 5);
+
 
 
             //Assert
             Assert.Equal(expected.ToString(), actual.ToString());
-            
+
         }
 
     }

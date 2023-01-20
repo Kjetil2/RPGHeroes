@@ -6,22 +6,22 @@ using Xunit;
 namespace RPGHeroesTest
 {
     // Creating a test class
-    public class MageTest
+    public class WarriorTest
     {
         [Fact]
         
         //Creating a new test Methode
-        public void MageLevelUp_AddoneLevel_ShouldReturnLevelPlussOne()
+        public void WarriorLevelUp_AddoneLevel_ShouldReturnLevelPlussOne()
         
         {
 
-            Mage mage = new Mage("Kjetil");
+            Warrior warrior = new Warrior("Kjetil");
             
             // Arrange 
-            HeroAttribute expected = new HeroAttribute(1, 1, 8);
+            HeroAttribute expected = new HeroAttribute(5, 2, 1);
 
             //Act
-            HeroAttribute actual = new HeroAttribute(1,1,5);
+            HeroAttribute actual = new HeroAttribute(3,2,1);
             
 
 
