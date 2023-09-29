@@ -4,7 +4,7 @@ I Tried to create a Console Application in .NET
 I used .Net 6.0
 I was given some guidelinse to how i could create it an minimum requierments.
 
-I diden't meet those requierment, but i mange to create several classes, methodes, Attributes and Constructor's.
+I didn't meet those requierment, but i manage to create several classes, methodes, Attributes and Constructor's.
 
 I struggel alot with the calculation. And i did not got time to do the testes. 
 
